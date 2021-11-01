@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import RecipeTitle from './RecipeTitle';
 import RecipeRatings from './RecipeRatings';
+import IngredientList from './IngredientList';
 
 // TODO: Add recipe object
 const recipe = {
@@ -15,9 +16,10 @@ const recipe = {
       { name: '3 potatoes, cut into 1/2" pieces', prepared: false },
       { name: '4 Tbsp butter', prepared: false },
       { name: '1/8 cup heavy cream', prepared: false },
-      { name: 'Salt', prepared: false },
+      { name: 'Salt', prepared: true },
       { name: 'Pepper', prepared: false },
   ],
+  
 };
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
       <h1> Recipe Manager </h1>
       <RecipeTitle title={ recipe.title } />
       <RecipeRatings feedback={recipe.feedback} />
+      <IngredientList ingredients={recipe.ingredients}/>
     </article>
   );
 }

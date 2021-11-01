@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import RecipeTitle from './RecipeTitle';
+import RecipeRatings from './RecipeRatings';
 
 // TODO: Add recipe object
 const recipe = {
@@ -24,6 +25,7 @@ function App() {
     <article>
       <h1> Recipe Manager </h1>
       <RecipeTitle title={ recipe.title } />
+      <RecipeRatings feedback={recipe.feedback} />
     </article>
   );
 }

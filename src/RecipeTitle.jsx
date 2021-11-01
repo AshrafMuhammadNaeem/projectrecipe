@@ -7,3 +7,4 @@ function RecipeTitle(props) {
         </section>
     )
 };
+export default RecipeTitle;

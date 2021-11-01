@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import RecipeTitle from './RecipeTitle';
 
 function App() {
   return (
     <article>
-      <h1> Mashed Potatoes </h1>
+      <h1> Recipe Manager </h1>
+      <RecipeTitle />
     </article>
   );
 }
